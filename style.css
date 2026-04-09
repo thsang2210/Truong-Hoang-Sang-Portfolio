@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url('background-gradient.png');
+  background: linear-gradient(to bottom, #1e90ff, #001f3f);
   padding: 10px 20px;
   position: fixed;
   top: 0;
@@ -45,22 +45,16 @@ body {
   color: yellow;
 }
 
-.hero {
+.hero, .section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 100px 40px 40px; /* extra top padding for fixed header */
+  padding: 100px 40px 40px;
   min-height: 100vh;
 }
 
-.home-bg {
-  background: url('profile.png') no-repeat center center;
-  background-size: cover;
-}
-
 .gradient-bg {
-  background: url('background-gradient.png') no-repeat center center;
-  background-size: cover;
+  background: linear-gradient(to bottom, #1e90ff, #001f3f);
 }
 
 .intro-title {
@@ -76,14 +70,15 @@ body {
   margin-top: 10px;
 }
 
+.profile-img {
+  margin-top: 20px;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
 .experience-logos img {
   height: 60px;
   margin-right: 20px;
-}
-
-.section {
-  padding: 100px 40px 40px;
-  min-height: 100vh;
 }
 
 .about-container {
