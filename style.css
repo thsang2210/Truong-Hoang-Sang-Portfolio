@@ -2,19 +2,15 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  color: white;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(to bottom, #1e90ff, #001f3f);
+  background: #0a3d62;
+  color: white;
   padding: 10px 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
 }
 
 .nav-left ul {
@@ -32,72 +28,9 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.nav-left ul li a.active {
-  color: yellow;
 }
 
 .site-title {
   font-size: 18px;
   font-weight: bold;
-  color: yellow;
-}
-
-.hero, .section {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 100px 40px 40px;
-  min-height: 100vh;
-}
-
-.gradient-bg {
-  background: linear-gradient(to bottom, #1e90ff, #001f3f);
-}
-
-.intro-title {
-  font-size: 40px;
-  color: yellow;
-}
-
-.name-box {
-  background: blue;
-  color: white;
-  padding: 10px 20px;
-  font-size: 24px;
-  margin-top: 10px;
-}
-
-.profile-img {
-  margin-top: 20px;
-  max-width: 250px;
-  border-radius: 10px;
-}
-
-.experience-logos img {
-  height: 60px;
-  margin-right: 20px;
-}
-
-.about-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.about-left, .about-right {
-  flex: 1;
-  padding: 20px;
-}
-
-.edu-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.edu-item img {
-  height: 50px;
-  margin-right: 15px;
 }
