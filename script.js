@@ -1,19 +1,15 @@
-// Fade-in animation
-const elements = document.querySelectorAll('.fade-in');
-
-window.addEventListener('scroll', () => {
-  elements.forEach(el => {
-    const pos = el.getBoundingClientRect().top;
-    if (pos < window.innerHeight - 100) {
-      el.classList.add('visible');
-    }
-  });
-});
-
-// Accordion
-document.querySelectorAll(".accordion").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const panel = btn.nextElementSibling;
-    panel.style.display = panel.style.display === "block" ? "none" : "block";
+// Accordion functionality for achievements
+document.addEventListener("DOMContentLoaded", function() {
+  const accordions = document.querySelectorAll(".accordion");
+  accordions.forEach(acc => {
+    acc.addEventListener("click", function() {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
   });
 });
