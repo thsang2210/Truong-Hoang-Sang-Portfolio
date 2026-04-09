@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: url('images/background-gradient.png');
+  background: url('background-gradient.png');
   padding: 10px 20px;
   position: fixed;
   top: 0;
@@ -54,12 +54,12 @@ body {
 }
 
 .home-bg {
-  background: url('images/profile.png') no-repeat center center;
+  background: url('profile.png') no-repeat center center;
   background-size: cover;
 }
 
 .gradient-bg {
-  background: url('images/background-gradient.png') no-repeat center center;
+  background: url('background-gradient.png') no-repeat center center;
   background-size: cover;
 }
 
