@@ -11,6 +11,10 @@ body {
   align-items: center;
   background: url('images/background-gradient.png');
   padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav-left ul {
@@ -28,6 +32,11 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-left ul li a.active {
+  color: yellow;
 }
 
 .site-title {
@@ -40,14 +49,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 40px;
-  background-size: cover;
-  background-position: center;
-  min-height: 500px;
+  padding: 100px 40px 40px; /* extra top padding for fixed header */
+  min-height: 100vh;
 }
 
-.home-left {
-  flex: 1;
+.home-bg {
+  background: url('images/profile.png') no-repeat center center;
+  background-size: cover;
+}
+
+.gradient-bg {
+  background: url('images/background-gradient.png') no-repeat center center;
+  background-size: cover;
 }
 
 .intro-title {
@@ -63,20 +76,14 @@ body {
   margin-top: 10px;
 }
 
-.home-right {
-  flex: 1;
-  padding-left: 40px;
-}
-
 .experience-logos img {
   height: 60px;
   margin-right: 20px;
 }
 
 .section {
-  padding: 40px;
-  background-size: cover;
-  background-position: center;
+  padding: 100px 40px 40px;
+  min-height: 100vh;
 }
 
 .about-container {
